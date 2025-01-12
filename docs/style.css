@@ -1,0 +1,747 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fredoka', sans-serif;
+    min-height: 100vh;
+    position:relative;
+}
+
+/* header */
+header.pageheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header.pageheader .logoandname {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+}
+header.pageheader .logo {
+    height: 50px;
+}
+header.pageheader .name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    height: 20px;
+    margin-top:5%
+}
+header.pageheader .socialmedia img {
+    height: 30px;
+    cursor: pointer;
+}
+header.pageheader .socialmedia img:hover {
+    transform: scale(1.1); 
+}
+
+/* footer */
+footer {
+    font-family: 'roboto';
+    text-align: center;
+    padding: 5px 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color:#333;
+    margin-top:auto;
+}
+
+/* shapes */
+.shape { 
+    position: absolute;  
+    opacity:0.5;
+} 
+.shape1 { 
+    width: 200px; 
+    height: 200px; 
+    background-color: #fced9b; 
+    border-radius: 100%;
+    top: 35%; 
+    left: 1%; 
+} 
+.shape2 { 
+    width: 120px; 
+    height: 120px; 
+    background-color: #fde456f4; 
+    border-radius: 100%;
+    top: 47%; 
+    left: -0.5%; 
+} 
+.shape3 { 
+    width: 150px; 
+    height: 150px; 
+    background-color: #f9d75a;
+    border-radius: 100%;
+    bottom: 0%; 
+    left: 85%; 
+} 
+.shape4 { 
+    width: 80px; 
+    height: 80px; 
+    background-color: #ac9631;
+    border-radius: 100%; 
+    bottom: 0%; 
+    left: 84%; 
+}
+.shape5 { 
+    width: 80px; 
+    height: 80px; 
+    background-color: #1f1f18; 
+    border-radius: 100%;
+    bottom: 90%; 
+    left:87%; 
+}
+.shape6 { 
+    width: 150px; 
+    height: 150px; 
+    background-color: #FEE459;
+    border-radius: 100%;
+    bottom: 90%; 
+    left: 90%; 
+} 
+.shape7 { 
+    width: 700px; 
+    height: 700px; 
+    background-color: #c8c8d7f1;
+    border-radius: 100%;
+    bottom: 15%; 
+    left: 53%;
+}
+.shape8 { 
+    width: 339px; 
+    height:100%; 
+    background-color: #ffd100;
+    border-radius:0 ;
+    bottom: 0; 
+    left: 77.4%; 
+}
+.shape9{
+    width: 100%; 
+    height:50%; 
+    background-color:#ffd100;
+    border-radius:0 ;
+    bottom:83%; 
+    left: 00%; 
+}
+.shape10{
+    width: 0.3%; 
+    height:68%; 
+    background-color:#292514;
+    border-radius:0 ;
+    bottom:8%; 
+    left: 71%;
+    overflow-y: auto; 
+    position: absolute; 
+}
+.shape12 { 
+    width: 200px; 
+    height: 200px; 
+    background-color: #fced9b; 
+    border-radius: 100%;
+    top: 52%; 
+    left: 32%; 
+} 
+.shape13 { 
+    width: 120px; 
+    height: 120px; 
+    background-color: #f8d31cf4; 
+    border-radius: 100%;
+    top: 64%; 
+    left: 41%; 
+} 
+
+
+/* buttons */
+.buttonhome {
+    margin-top: 25%;
+    display: flex;
+    margin-left: 90%;
+    max-width: 10%;
+}
+
+.nextbuttonhome {
+    text-decoration: none;
+    background-color: #ffd100;
+    color: #333;
+    padding: 6px 35px;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nextbuttonhome:hover {
+    font-size: 1.7rem;
+}
+
+.button {
+    text-align: center;
+    margin-top: -5px;
+    display: flex;
+    margin-left: 22%;
+    margin-right: 2%;
+    max-width: 10%;
+    gap:600%;
+}
+
+.nextbutton,.previousbutton {
+    flex:1;
+    text-decoration: none;
+    background-color: #ffd966;
+    color: #333;
+    padding: 6px 35px;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.previousbutton:hover,.nextbutton:hover {
+    font-size: 1.7rem;
+}
+.buttonprevious {
+    text-align: center;
+    margin-top: -5px;
+    display: flex;
+    margin-left: 22%;
+    margin-right: 2%;
+    max-width: 5%;
+    gap:600%;
+}
+
+.previousbutton {
+    flex:1;
+    text-decoration: none;
+    background-color: #ffd966;
+    color: #333;
+    padding: 6px 35px;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.previousbutton:hover{
+    font-size: 1.5rem;
+}
+
+
+/* Navigation */
+nav {
+    background-color: #ffeeba;
+    width: 20%;
+    position: fixed;
+    top: 60px; 
+    bottom: 40px; 
+    overflow-y: auto; 
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border: 2.5px solid #aaa8a8;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 200px;
+}
+
+nav ul li {
+    margin-top: 100px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 1px;
+    font-size: 1.3rem;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    font-size:1.6rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* main header */
+.Header{
+    margin-left: 45%;
+    margin-top:2%;  
+    margin-bottom:2%;
+    padding:30px 10px;
+    width:30%;
+    align-items: center;
+    border: 2.5px solid #aaa8a8;
+}
+.Header h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.statment p{
+    margin-left: 37%;
+    font-size: 1.3rem;
+    margin-right:15%;
+    line-height: 2;   
+}
+/* main header of contactme page */
+.cont{
+    display:flex;
+}
+.Headercontact,.link{
+    flex:1;
+}
+.cont .Headercontact{
+    margin-left: 25%;
+    margin-right: 15%;
+    margin-top:2%;  
+    margin-bottom:2%;
+    padding:30px 10px;
+    width:20%;
+    height:35%;
+    border: 2.5px solid #aaa8a8;
+}
+.cont .Headercontact h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* main for home page */
+.home {
+    display: flex;
+    padding:100px; 
+    background-color: white; 
+} 
+.welcome { 
+    max-width: 100%;
+    display: flex; 
+    align-items: center; 
+    padding:0;
+    margin-top:1%; 
+} 
+.welcome p { 
+    font-size: 16px; 
+    color: #333;
+    font-family: 'roboto';
+}
+.welcome h1 { 
+    font-size: 48px; 
+    font-weight: bold;
+    margin:0;
+    margin-bottom: 10%;
+} 
+.image {
+    max-width: 50%;
+    margin-left:50px;
+}
+.image img { 
+    max-width: 100%; 
+    height:auto;
+    margin-top:1%;
+    margin-left:33%;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-wrap:wrap;
+    margin-left: 19%; 
+    padding: 35px;
+}
+
+/* main for aboutme page */
+.hobbies,.favoritemusic,.favoritebooks{
+    max-width:30%;
+    flex:1;
+    overflow-y: auto;
+    flex-wrap:wrap; 
+    background-color:#d3d3d3;
+    border-radius: 40px; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid #0a0909;
+    min-width:250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hobbies:hover, .favoritemusic:hover, .favoritebooks:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.hobbies h2 ,.favoritemusic h2,.favoritebooks h2 {
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hobbies ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+.hobbies li {
+    margin-bottom:30px;
+    font-size: 1.3rem;
+    line-height: 20px;
+}
+.favoritemusic p{
+    margin-bottom:30px;
+    font-size: 1.3rem;
+    line-height: 20px;  
+}
+.favoritemusic h3{
+    margin-bottom:5px; 
+    margin-top:10px;
+    font-size: 1.5rem; 
+}
+.favoritemusic audio{
+    max-width:270px;  
+}
+
+.favoritebooks{
+    display: flex;
+    flex-direction: column;
+}
+
+.favoritebooks img {
+    width: 100px;
+    border-radius: 5px;
+    margin-left:30%;
+}
+.favoritebooks p{
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+.favoritebooks figcaption {
+    font-family: 'roboto';
+    margin-top:3%;
+    margin-bottom:3%;
+    margin-left:22%;
+    font-size: 1.1rem;
+}
+
+/* main of skills page */
+.skillspage{
+    display:flex;
+    margin-left: 22%;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-tabel,.accomplishments{
+    flex:1;
+} 
+.skills-table{
+    max-height:100%;
+    background-color: #fff;
+}
+
+.skills-table h2 {
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skills-table table {
+    width: 80vb;
+    height:55vb;
+}
+
+.skills-table th,
+.skills-table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.skills-table th {
+    background-color:white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.skills-table td{
+    font-size: 1rem;
+}
+
+.skills-table td img {
+    margin-right: 1px;
+    width:22vb;
+    height:17vb;
+}
+.skills-table td img:hover {
+    transform: scale(1.5);
+    z-index: 10; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+.accomplishments {
+    background-color: #fff;
+    padding: 20px; 
+    margin-top: -1%;   
+}
+
+.accomplishments h2 {
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.accomplishments p {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #555;   
+}
+
+/* main of bucketlist page */
+.bucketlistpage{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    margin-left: 20%; 
+}
+.futuregoals,.adventures{
+    padding:50px;
+    margin-bottom: 20%;
+}
+.futuregoals h2,.adventures h2{
+    font-size:1.7rem;
+    color:black;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.futuregoals ul{
+    padding: 0;
+}
+.futuregoals ul li{
+    font-size: 1.3rem;
+    color:#000;
+    margin-bottom:10px;
+    line-height: 2rem;
+}
+.adventures{
+    margin-left:-30%;
+}
+.adventurevideo{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.adventurevideo h3{
+    font-size: 1.3rem;
+    margin-top: 15px;
+    font-weight: normal;
+}
+.v1,.v2{
+    flex:1;
+}
+.v1 video,.v2 video{
+    width:90%;
+    height:auto;
+}
+
+/* main for contactme page */
+.Image {
+    width:30%;
+    display: block;
+    margin-left:57%; 
+    max-width: 100%; 
+    height: auto;
+    margin-bottom:2%;
+    margin-top:0.03%;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:30px;
+    margin-top: 0px;
+    flex-wrap:wrap;
+}
+.link ul { 
+    list-style: none; 
+    padding: 0; 
+} 
+.link ul li {
+     display: flex;
+     margin-bottom: 15px; 
+    } 
+.link ul li img {
+     width: 40px; 
+     height: 40px; 
+} 
+.link ul li p { 
+    font-size: 1.3rem; 
+    color: #333; 
+    margin-left:10px;
+    margin-top:18px;
+}
+
+
+
+
+
+/* Default desktop styles remain unchanged */
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8rem;
+    }
+    header.pageheader {
+        flex-direction: column;
+        padding: 10px;
+    }
+    header.pageheader .name {
+        font-size: 1rem; /* Adjust for better readability */
+        margin-top: 10px;
+    }
+    nav {
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .main, .home, .bucketlistpage {
+        margin-left: 0;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .hobbies, .favoritemusic, .favoritebooks {
+        max-width: 100%;
+        margin-bottom: 20px;
+        overflow-x: auto;
+    }
+    .skills-table table {
+        font-size: 0.8rem;
+    }
+    .accomplishment, .adventures, .videos {
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+/* Mobile Landscape */
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    header.pageheader {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    nav {
+        width: 100%;
+        display: none;
+    }
+    .main, .home, .bucketlistpage {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .hobbies, .favoritemusic, .favoritebooks {
+        max-width: 45%;
+        overflow-x: auto;
+    }
+    .image img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .accomplishment, .adventures, .videos {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Tablet Portrait */
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    header.pageheader {
+        flex-direction: column;
+        padding: 15px;
+    }
+    nav {
+        width: 30%;
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .main {
+        margin-left: 30%;
+        padding: 20px;
+    }
+    .bucketlistpage {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+    .skills-table, .accomplishments {
+        max-width: 100%;
+    }
+    .hobbies, .favoritemusic, .favoritebooks {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    .adventures, .videos {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    header.pageheader {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav {
+        width: 20%;
+        display: none;
+    }
+    .main, .home {
+        margin-left: 22%;
+        padding: 20px;
+    }
+    .bucketlistpage {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    .skills-table, .accomplishments {
+        flex: 1;
+    }
+    .hobbies, .favoritemusic, .favoritebooks {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    .adventures, .videos {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Additional styles for better responsiveness on intermediate breakpoints */
+@media (max-width: 1024px) {
+    .main {
+        padding: 15px;
+    }
+    header.pageheader {
+        padding: 10px;
+    }
+}
